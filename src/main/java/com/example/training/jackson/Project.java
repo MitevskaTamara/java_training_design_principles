@@ -4,11 +4,14 @@ public class Project {
   private int id;
   private String name;
 
+  private Details details;
+
   public Project(){}
 
-  public Project(int id, String name) {
+  public Project(int id, String name, Details details) {
     this.id = id;
     this.name = name;
+    this.details = details;
   }
 
   public void setId(int id) {
@@ -27,8 +30,16 @@ public class Project {
     return name;
   }
 
+  public void setDetails(Details details) {
+    this.details = details;
+  }
+
+  public Details getDetails() {
+    return details;
+  }
+
   @Override
   public String toString() {
-    return this.name;
+    return this.name + " " + this.details.toString();
   }
 }

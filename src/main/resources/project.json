@@ -1,4 +1,14 @@
 {
   "id" : 1,
-  "name" : "MK Academy"
+  "name" : "MK Academy",
+  "details": {
+    "street" : "Balzakova",
+    "streetNumber" : 32,
+    "city": "Skopje",
+    "price" : 1000
+  }
 }
+
+
+
+
